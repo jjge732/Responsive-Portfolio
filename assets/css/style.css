@@ -1,0 +1,198 @@
+.name {
+    grid-area: name;
+    background-color: #4AAAA5;
+    color: #fff;
+    padding: 20px;
+    left: 25%;
+}
+
+/* .link1 {
+    grid-area: link1;
+    display: flex;
+    align-items: center;
+}
+
+.link2 {
+    grid-area: link2;
+    display: flex;
+    align-items: center;
+}
+
+.link3 {
+    grid-area: link3;
+    display: flex;
+    align-items: center;
+} */
+
+.links {
+    grid-area: links;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.containerNav {
+    display: grid;  
+    grid-template-areas: "space1 name space2 links space3";
+    justify-items: center;
+}
+
+.containerNav, h1, div {
+    text-align: center;
+    font-size: 20px;
+}
+
+header {
+    position: sticky;
+    position: -webkit-sticky;   /*makes usable on safari*/
+    right: 0;
+    top: 0; /*necessary to work apparently*/
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    font-weight: bold;
+    z-index: 3; /*ensures header won't render under images in the portfolio*/
+}
+
+
+h2 {
+    font-size: 30px;
+}
+
+.conatinerNav, h1, h2, h3, .containerMain, .containerFooter {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/* .containerMain {
+    background-color: #fff;
+    border-color: #ddd;
+} */
+
+.img-1 {
+    grid: anchor1;
+    display: relative;
+}
+
+.img-2 {
+    grid: anchor2;
+}
+
+.img-3 {
+    grid: anchor3;
+}
+
+.img-4 {
+    grid: anchor4;
+}
+
+.img-5 {
+    grid: anchor5;
+}
+
+.space3 {
+    grid: space3;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-areas: 
+        "anchor1 anchor2"
+        "anchor3 anchor4"
+        "anchor5 space2"
+        "space3 space3";
+    grid-column-gap: 40px;
+    margin-top: 20px; 
+}
+
+.linkedIn {
+    grid-area: logo1;
+}
+
+.gitHub {
+    grid-area: logo2;
+}
+
+.copyright {
+    grid-area: copyright;
+}
+
+.containerFooter {
+    display: grid;
+    grid-template-areas: 
+        "space1 space1 logo1 logo2 space2 space2"
+        "space1 space1 copyright copyright space2 space2";
+    grid-gap: 10px;
+    justify-content: center;
+    background-color: #666;
+    color: #ccc;
+}
+
+footer {
+    background-color: #666;
+    width: 100%;
+    position: absolute;
+    bottom: -25px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    height: 90px;
+    text-align: center;
+    color: #ccc;
+    border-top: 8px solid #4aaaa5;
+}
+
+:not(.conatinerNav, h1, h2, h3, .containerMain, .containerFooter) {
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1057px) {
+    .textBox {
+        margin: 40px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+    }
+
+    .containerNav {
+        grid-template-areas:
+            "name"
+            "links";
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .profilePic {
+       float: none;
+       margin-left: 25%;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    .portfolio {
+        grid-template-areas:
+            "anchor1"
+            "anchor2"
+            "anchor3"
+            "anchor4"
+            "anchor5";
+    }
+    
+    body {
+        min-height: 2500px;
+    }
+}

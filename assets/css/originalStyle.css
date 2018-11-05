@@ -1,0 +1,159 @@
+body {
+    background-image: url(../images/wavy-dots/wavy-dots.png);
+    background-repeat: repeat;  /*causes image to spread across screen*/
+    min-height: 1500px;
+    position: relative;
+    font-size: 18px;
+}
+
+
+section {
+    color: #777;
+}
+
+.myName {
+    position: absolute;
+    left: 25%;  /*same as edge of box below*/
+    top: 0;
+    background-color: #4aaaa5;
+    color: #fff;
+    border-bottom: 2px solid #ccc;
+    padding: 26px 10px; /*made it flush by eye*/
+}
+
+a {
+    color: #aaa;    /*changes link color*/
+}
+
+a:hover {
+    color: #DD524A;
+}
+
+.title {
+    position: relative;
+    color: #4aaaa5;
+    top: 10px;
+    height: 50px;
+    margin: 0;
+    border-bottom: 3px solid #ccc;
+    border-color: rgba(86.7%, 86.7%, 86.7%, .75) /*semi-transparent border*/
+}
+
+.middleLink {   /*created lines between the 3 links*/
+    border-left: 1.5px solid;
+    border-right: 1.5px solid;
+    border-color: rgba(0, 0, 0, .25);
+    margin: 3px;
+    padding: 0 5px;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+:not(h1, h2, h3) {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+div, article {
+    box-sizing: border-box;
+}
+
+.textBox {
+    background-color: #fff;
+    border: 2px solid rgba(86.7%, 86.7%, 86.7%, .25); /*converted #ddd to rgba so I could make the border opaque*/
+    margin: 40px auto;
+    box-sizing: border-box;
+    width: 960px;  /*last line and this one make it actually 960px*/
+    height: auto;
+    padding: 25px 25px;
+    min-height: 400px;
+}
+
+.text {
+    line-height: 30px;
+}
+
+.profilePic {   /*I floated the image so the text would wrap around it in a pleasing way*/
+   float: left;
+   margin-right: 20px;
+   margin-top: 20px;
+   width: 50%;
+   height: auto;    /*prevents distortion of the image*/
+   max-width: 240px;    /*stops the user from seeing a very pixelated image*/
+}
+
+
+.profilePic:before, .profilePic:after {
+    clear: both;    /*wanted to make sure the float was cleared*/
+}
+
+p, h3 {
+    margin-top: 35px;
+}
+
+p {
+    text-indent: 50px;
+}
+
+.button {
+    background-color: #4aaaa5;
+    border: none;       /*wasn't a fan of the way the border looked on the page*/
+    padding: 5px 15px;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #DD524A;
+}
+
+.image_container {
+    position: relative;
+    margin-top: 40px;
+}
+
+.images, .caption {
+    width: 100%;   /*this is based off table cells*/
+    height: auto;
+ }
+
+.caption {  /*unnecessary class - could have just used the figca*/
+    position: absolute;
+    display: absolute;
+    background-color: #4aaaa5;
+    top: 60%;
+    height: 20px; /*wanted to default to max height*/
+    padding: 5% 0;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2; /*makes sure captions are on top of the image*/
+    /*typoed absolute instead of 2 the first time and it worked*/
+}
+
+.caption:hover {
+    color: #F6DB5F;
+}
+
+textarea {
+    border: 2px solid #ccc;
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(97, 97, 97);  /*rgb easier to use offline*/
+    width: 100%;
+    position: absolute;
+    bottom: -25px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    height: 90px;
+    text-align: center;
+    color: #ccc;
+    border-top: 8px solid #4aaaa5;
+}
+
+.logo {
+    margin: 0 1px 0 7px; /*unequal margins allowed centering of images*/
+}
