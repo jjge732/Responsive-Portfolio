@@ -7,7 +7,8 @@
     animation-name: themeChangeHeader;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate;
+    animation-delay: 2s;
 }
 
 /* .link1 {
@@ -152,7 +153,8 @@ footer {
     animation-name: themeChangeFooter;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate;
+    animation-delay: 2s;
 }
 
 :not(.conatinerNav, h1, h2, h3, .containerMain, .containerFooter) {
