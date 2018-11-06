@@ -36,7 +36,12 @@ a:hover {
     height: 50px;
     margin: 0;
     border-bottom: 3px solid #ccc;
-    border-color: rgba(86.7%, 86.7%, 86.7%, .75) /*semi-transparent border*/
+    border-color: rgba(86.7%, 86.7%, 86.7%, .75); /*semi-transparent border*/
+    animation-name: themeChangeMain;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
 }
 
 .middleLink {   /*created lines between the 3 links*/
@@ -102,6 +107,10 @@ p {
     border: none;       /*wasn't a fan of the way the border looked on the page*/
     padding: 5px 15px;
     color: #fff;
+    animation-name: themeChangeButton;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .button:hover {
@@ -130,6 +139,10 @@ p {
     text-align: center;
     z-index: 2; /*makes sure captions are on top of the image*/
     /*typoed absolute instead of 2 the first time and it worked*/
+    animation-name: themeChangeButton;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .caption:hover {
@@ -156,4 +169,14 @@ footer {
 
 .logo {
     margin: 0 1px 0 7px; /*unequal margins allowed centering of images*/
+}
+
+@keyframes themeChangeMain {
+    from {color: #4AAAA5;}
+    to {color: #BC629B;}
+}
+
+@keyframes themeChangeButton {
+    from {background-color: #4AAAA5;}
+    to {background-color: #BC629B;}
 }

@@ -4,6 +4,10 @@
     color: #fff;
     padding: 20px;
     left: 25%;
+    animation-name: themeChangeHeader;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 /* .link1 {
@@ -145,11 +149,25 @@ footer {
     text-align: center;
     color: #ccc;
     border-top: 8px solid #4aaaa5;
+    animation-name: themeChangeFooter;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 :not(.conatinerNav, h1, h2, h3, .containerMain, .containerFooter) {
     color: #777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+@keyframes themeChangeHeader {
+    from {background-color: #4AAAA5;}
+    to {background-color: #BC629B;}
+}
+
+@keyframes themeChangeFooter {
+    from {border-color: #4AAAA5;}
+    to {border-color: #BC629B;}
 }
 
 @media screen and (max-width: 1057px) {
