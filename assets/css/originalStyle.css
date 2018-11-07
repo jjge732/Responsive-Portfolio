@@ -42,6 +42,7 @@ a:hover {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-delay: 2s;
+    animation-timing-function: ease-in-out;
 }
 
 .middleLink {   /*created lines between the 3 links*/
@@ -112,6 +113,7 @@ p {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-delay: 2s;
+    animation-timing-function: ease-in-out;
 }
 
 .button:hover {
@@ -145,6 +147,7 @@ p {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-delay: 2s;
+    animation-timing-function: ease-in-out;
 }
 
 .caption:hover {

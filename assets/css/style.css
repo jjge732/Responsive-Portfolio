@@ -9,25 +9,8 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-delay: 2s;
+    animation-timing-function: ease-in-out;
 }
-
-/* .link1 {
-    grid-area: link1;
-    display: flex;
-    align-items: center;
-}
-
-.link2 {
-    grid-area: link2;
-    display: flex;
-    align-items: center;
-}
-
-.link3 {
-    grid-area: link3;
-    display: flex;
-    align-items: center;
-} */
 
 .links {
     grid-area: links;
@@ -74,11 +57,6 @@ h2 {
 .conatinerNav, h1, h2, h3, .containerMain, .containerFooter {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
-
-/* .containerMain {
-    background-color: #fff;
-    border-color: #ddd;
-} */
 
 .img-1 {
     grid: anchor1;
@@ -155,6 +133,7 @@ footer {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-delay: 2s;
+    animation-timing-function: ease-in-out;
 }
 
 :not(.conatinerNav, h1, h2, h3, .containerMain, .containerFooter) {
