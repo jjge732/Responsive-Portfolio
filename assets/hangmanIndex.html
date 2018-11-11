@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Unit 4 Game</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Word Guess Game</title>
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header></header>
-    <div>
-
-    </div>
+    <header>
+        <h1>Welcome to Gym Hangman!</h1>
+    </header>
+    <main>
+        <h2>If you are ready, type letters to see if they are in the word. If they are they will be shown in the appropriate blank space. If not, they will be added to the list below the blanks. If you run out of guesses, it's game over.</h2>
+        <div id="centralContent">
+            <p id='blanks'></p>
+            <h3>Incorrect Letters Guessed:</h3>
+            <br>
+            <p id='past_guesses'></p>
+            <br>
+            <hr>
+            <h3>Number of Guesses Left:</h3>
+            <br>
+            <p id="guessesLeft"></p>
+            <br>
+            <div id="newGame"></div>
+        </div>
+        <div id="leftContent">
+            <!-- <img id='leftImage' src='assets/images/hangman_image.jpg' alt='hanging image' height='400px' width='auto'> -->
+            <div id='pole'></div>
+            <div id='crossBeam'></div>
+            <div id='hangingBeam'></div>
+            <!-- <div id="head"></div>
+            <div id="body"></div>
+            <div id="leftArm"></div>
+            <div id="rightArm"></div>
+            <div id="leftLeg"></div>
+            <div id="rightLeg"></div> -->
+        </div>
+        <div id="rightContent">
+            <img src='assets/images/gym_image.jpg' class='gymImage'alt='gym image' width='476px' height='auto'>
+        </div>
+    </main>
     <footer>
-
+        
     </footer>
     <script src="assets/javascript/game.js"></script>
 </body>
