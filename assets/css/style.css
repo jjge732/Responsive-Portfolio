@@ -173,6 +173,15 @@ footer {
 @media screen and (max-width: 640px) {
     header {
         position: static;
+        min-width: 360px;
+    }
+
+    footer {
+        min-width: 360px;
+    }
+
+    .name {
+        padding: 20px 0;
     }
 
     .containerNav {
@@ -205,5 +214,11 @@ footer {
     
     body {
         min-height: 2500px;
+        margin: 0;
+    }
+
+    .textBox {
+        min-width: 360px;
+        margin: 20px 0;
     }
 }
